@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #070724;
+}
+
+button {
+    background:none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    box-shadow: 0 2px 0px yellow inset,
+    500px 0 0 rgba(255, 255, 255, 0.03) inset;
+    box-shadow: green;
+}
+
+.text-content{
+    color: #ffffff83;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.text-content-number{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-navbar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    box-shadow: 0 -2px 0px rgba(255, 255, 255, 0.416) inset;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+.hamburger-menu-buttons-container{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
+
+.hamburger-menu-buttons-container div{
+    box-shadow: 0 -2px 0px rgba(255, 255, 255, 0.416) inset;
+}
+
+.planets-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planet-link-container {
+    margin: 2px;
+}
+
+.planet-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.planet-picture, .planet-picture-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.planet-picture{
+    width: 111px;
+    height: 111px;
+}
+
+.planet-picture-2{
+    top: 200px;
+    width: 80px;
+    height: 90px;
+}
+
+.planet-wikipedia-and-options-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.planet-wikipedia-and-source{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.planet-option{
+    padding: 10px;
+    height: 50px;
+    border: 1px solid #ffffffa8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.planet-option:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.621);
+}
+
+.planet-option .text-content{
+    margin-right: 30px;
+}
+
+.planet-info-container{
+    padding: 28px 24px 48px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planet-info{
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ffffffa8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1441px){
+
+    .planet-wikipedia-and-source{
+        max-width: 400px;
+        margin-left: 500px;
+    }
+    
+    .wrapper{
+        flex-direction: row;
+    }
+
+    .planet-picture{
+        width: 290px;
+        height: 290px;
+    } 
+
+    .planet-option{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 400px;
+        border: 1px solid #ffffffa8;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 769px){
+
+     .planet-picture{
+        width: 270px;
+        height: 270px;
+    }
+
+    .planet-picture-2{   
+        top: 180px;
+        width: 165px;
+        height: 200px;
+    } 
+
+
+    .planet-info {
+       
+        height: auto;
+        width: 130px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+    }
+
+    .hamburger-menu-buttons-container{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hamburger-menu{
+        display: block;
+    }
+
+    .planets-menu-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1440px){
+
+    .header-navbar-container{
+        flex-direction: column;
+    }
+
+    .planet-options{
+        width: 100%;
+    }
+
+    .planet-option{
+        margin: 24px;
+    }
+
+}
